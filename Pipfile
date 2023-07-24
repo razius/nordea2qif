@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+chardet = "*"
+python-dateutil = "*"
+pandas = "*"
+ipython = "*"
+google-api-python-client = "*"
+google-auth-httplib2 = "*"
+google-auth-oauthlib = "*"
+ofxtools = "*"
+click = "*"
+quiffen = "*"
+lxml = "*"
+html5lib = "*"
+beautifulsoup4 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+# export_metals = {call = "scripts.export_metals:main()"}
+export_nordea = {call = "scripts.export_nordea:main()"}
+parse_txt_archive = {call = "scripts.parse_txt_archive:main()"}
+# pdf_to_txt = find 'current/' -name '*.pdf' -exec pdftotext -layout -nopgbrk {} \;
